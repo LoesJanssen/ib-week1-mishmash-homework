@@ -41,7 +41,7 @@ describe("Assignment 1 - ShoppingCart", function() {
   });
 
   it("should total up the value of items", function() {
-    const ShoppingCart = require("./ShoppingCart");
+    const ShoppingCart = require("./ShoppingCart.js");
     const cart = new ShoppingCart();
     cart.addItem("item 1", 1, 15.5);
     cart.addItem("item 2", 2, 3);

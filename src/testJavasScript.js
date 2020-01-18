@@ -1,19 +1,9 @@
-const students = [
-  { name: "Berat", score: 100 },
-  { name: "Isabella", score: 84 },
-  { name: "Sophie", score: 99 },
-  { name: "Rein", score: 24 }
-];
+const ShoppingCart = require("./ShoppingCart.js");
+const cart = new ShoppingCart();
+cart.addItem("item 1", 1, 15.5);
+cart.addItem("item 2", 2, 3);
+cart.addItem("item 3", 10, 2);
+cart.addItem("item 4", 0, 2);
+cart.addItem("item 5", 2, 0);
 
-const totalValueShoppingCard = this.items.reduce(function(
-  totalValueSoFar,
-  number
-) {
-  console.log(
-    "TOTALE WAARDE SO FAR",
-    totalValueSoFar,
-    "CURRENT NUMBER",
-    number
-  );
-},
-0);
+console.log(cart.total());
