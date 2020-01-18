@@ -10,12 +10,14 @@ describe("Assignment 2 - transform", function() {
       "groupAdultsByAgeRange should be a function"
     );
   });
+
   it("an empty array results in an empty object", function() {
     const groupAdultsByAgeRange = require("./transform.js")
       .groupAdultsByAgeRange;
     const grouping = groupAdultsByAgeRange([]);
     assert.deepStrictEqual(grouping, {});
   });
+
   it("filters out people under the age of 18", function() {
     const groupAdultsByAgeRange = require("./transform.js")
       .groupAdultsByAgeRange;
@@ -25,6 +27,7 @@ describe("Assignment 2 - transform", function() {
     ]);
     assert.deepStrictEqual(grouping, {});
   });
+
   it("only contains non-empty groups", function() {
     const groupAdultsByAgeRange = require("./transform.js")
       .groupAdultsByAgeRange;
