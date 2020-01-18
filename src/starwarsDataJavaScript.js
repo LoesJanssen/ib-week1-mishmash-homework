@@ -2,7 +2,6 @@ const lukeSkywalkerInfoContainer = document.getElementById("lukeSkywalkerInfo");
 const darthVaderButton = document.getElementById("darthVaderButton");
 
 // blocked by CORS policy: No 'Access-Control-Allow-Origin'
-
 function getLukeSkywalkerInfo() {
   fetch("https://swapi.co/api/people/1")
     .then(response => response.json())
