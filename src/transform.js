@@ -1,7 +1,7 @@
 function groupAdultsByAgeRange(adults) {
   const adultsByRange = adults.reduce(function(result, adult) {
     if (adult.age >= 18) {
-      return result.push(adult);
+      return adults.push(adult);
     }
     return result;
   }, {});
